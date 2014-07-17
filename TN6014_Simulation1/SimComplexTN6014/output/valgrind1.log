@@ -1,0 +1,24 @@
+
+=========================================================
+    Complex Network System Simulation         _ 
+                                    _ _ _ _  | | 
+    Px ---->                 --->  |_|_|_|_| |_| 
+  Time:5s   \  _ _ _ _     /                 S1, Time:4s 
+              |_|_|_|_| (x)                   _ 
+            /            R \        _ _ _ _  | | 
+    Py ---->        Time:1s  --->  |_|_|_|_| |_| 
+  Time:10s                                   S2, Time:7s
+=========================================================
+
+Performance metrics for the simulation:
+=========================================================
+
+Total simulated time = 200.811 sec
+Mean interarrival time for Px = 5.35914 sec
+Mean interarrival time for Py = 9.05325 sec
+Mean service time for R = 1.01883 sec
+Total Px served by S1 = 35
+Mean service time for S1 = 3.89878 sec
+Total Py served by S2 = 21
+Mean service time for S2 = 7.15978 sec
+

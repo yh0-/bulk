@@ -1,0 +1,202 @@
+
+=========================================================
+    Complex Network System Simulation         _ 
+                                    _ _ _ _  | | 
+    Px ---->                 --->  |_|_|_|_| |_| 
+  Time:5s   \  _ _ _ _     /                 S1, Time:4s 
+              |_|_|_|_| (x)                   _ 
+            /            R \        _ _ _ _  | | 
+    Py ---->        Time:1s  --->  |_|_|_|_| |_| 
+  Time:10s                                   S2, Time:7s
+=========================================================
+
+0 (initialize simulation) [B1 5] [B2 10] 
+5 (Event B1) [B3 6] [B1 10] 
+6 (Event B3) [B4 10] 
+10 (Event B2) [B3 11] [B2 20] 
+10 (Event B1) [B1 15] 
+10 (Event B4) 
+11 (Event B3) [B3 12] [B5 18] 
+12 (Event B3) [B4 16] 
+15 (Event B1) [B3 16] [B1 20] 
+16 (Event B4) 
+16 (Event B3) [B4 20] 
+18 (Event B5) 
+20 (Event B2) [B3 21] [B2 30] 
+20 (Event B1) [B1 25] 
+20 (Event B4) 
+21 (Event B3) [B3 22] [B5 28] 
+22 (Event B3) [B4 26] 
+25 (Event B1) [B3 26] [B1 30] 
+26 (Event B4) 
+26 (Event B3) [B4 30] 
+28 (Event B5) 
+30 (Event B2) [B3 31] [B2 40] 
+30 (Event B1) [B1 35] 
+30 (Event B4) 
+31 (Event B3) [B3 32] [B5 38] 
+32 (Event B3) [B4 36] 
+35 (Event B1) [B3 36] [B1 40] 
+36 (Event B4) 
+36 (Event B3) [B4 40] 
+38 (Event B5) 
+40 (Event B2) [B3 41] [B2 50] 
+40 (Event B1) [B1 45] 
+40 (Event B4) 
+41 (Event B3) [B3 42] [B5 48] 
+42 (Event B3) [B4 46] 
+45 (Event B1) [B3 46] [B1 50] 
+46 (Event B4) 
+46 (Event B3) [B4 50] 
+48 (Event B5) 
+50 (Event B2) [B3 51] [B2 60] 
+50 (Event B1) [B1 55] 
+50 (Event B4) 
+51 (Event B3) [B3 52] [B5 58] 
+52 (Event B3) [B4 56] 
+55 (Event B1) [B3 56] [B1 60] 
+56 (Event B4) 
+56 (Event B3) [B4 60] 
+58 (Event B5) 
+60 (Event B2) [B3 61] [B2 70] 
+60 (Event B1) [B1 65] 
+60 (Event B4) 
+61 (Event B3) [B3 62] [B5 68] 
+62 (Event B3) [B4 66] 
+65 (Event B1) [B3 66] [B1 70] 
+66 (Event B4) 
+66 (Event B3) [B4 70] 
+68 (Event B5) 
+70 (Event B2) [B3 71] [B2 80] 
+70 (Event B1) [B1 75] 
+70 (Event B4) 
+71 (Event B3) [B3 72] [B5 78] 
+72 (Event B3) [B4 76] 
+75 (Event B1) [B3 76] [B1 80] 
+76 (Event B4) 
+76 (Event B3) [B4 80] 
+78 (Event B5) 
+80 (Event B2) [B3 81] [B2 90] 
+80 (Event B1) [B1 85] 
+80 (Event B4) 
+81 (Event B3) [B3 82] [B5 88] 
+82 (Event B3) [B4 86] 
+85 (Event B1) [B3 86] [B1 90] 
+86 (Event B4) 
+86 (Event B3) [B4 90] 
+88 (Event B5) 
+90 (Event B2) [B3 91] [B2 100] 
+90 (Event B1) [B1 95] 
+90 (Event B4) 
+91 (Event B3) [B3 92] [B5 98] 
+92 (Event B3) [B4 96] 
+95 (Event B1) [B3 96] [B1 100] 
+96 (Event B4) 
+96 (Event B3) [B4 100] 
+98 (Event B5) 
+100 (Event B2) [B3 101] [B2 110] 
+100 (Event B1) [B1 105] 
+100 (Event B4) 
+101 (Event B3) [B3 102] [B5 108] 
+102 (Event B3) [B4 106] 
+105 (Event B1) [B3 106] [B1 110] 
+106 (Event B4) 
+106 (Event B3) [B4 110] 
+108 (Event B5) 
+110 (Event B2) [B3 111] [B2 120] 
+110 (Event B1) [B1 115] 
+110 (Event B4) 
+111 (Event B3) [B3 112] [B5 118] 
+112 (Event B3) [B4 116] 
+115 (Event B1) [B3 116] [B1 120] 
+116 (Event B4) 
+116 (Event B3) [B4 120] 
+118 (Event B5) 
+120 (Event B2) [B3 121] [B2 130] 
+120 (Event B1) [B1 125] 
+120 (Event B4) 
+121 (Event B3) [B3 122] [B5 128] 
+122 (Event B3) [B4 126] 
+125 (Event B1) [B3 126] [B1 130] 
+126 (Event B4) 
+126 (Event B3) [B4 130] 
+128 (Event B5) 
+130 (Event B2) [B3 131] [B2 140] 
+130 (Event B1) [B1 135] 
+130 (Event B4) 
+131 (Event B3) [B3 132] [B5 138] 
+132 (Event B3) [B4 136] 
+135 (Event B1) [B3 136] [B1 140] 
+136 (Event B4) 
+136 (Event B3) [B4 140] 
+138 (Event B5) 
+140 (Event B2) [B3 141] [B2 150] 
+140 (Event B1) [B1 145] 
+140 (Event B4) 
+141 (Event B3) [B3 142] [B5 148] 
+142 (Event B3) [B4 146] 
+145 (Event B1) [B3 146] [B1 150] 
+146 (Event B4) 
+146 (Event B3) [B4 150] 
+148 (Event B5) 
+150 (Event B2) [B3 151] [B2 160] 
+150 (Event B1) [B1 155] 
+150 (Event B4) 
+151 (Event B3) [B3 152] [B5 158] 
+152 (Event B3) [B4 156] 
+155 (Event B1) [B3 156] [B1 160] 
+156 (Event B4) 
+156 (Event B3) [B4 160] 
+158 (Event B5) 
+160 (Event B2) [B3 161] [B2 170] 
+160 (Event B1) [B1 165] 
+160 (Event B4) 
+161 (Event B3) [B3 162] [B5 168] 
+162 (Event B3) [B4 166] 
+165 (Event B1) [B3 166] [B1 170] 
+166 (Event B4) 
+166 (Event B3) [B4 170] 
+168 (Event B5) 
+170 (Event B2) [B3 171] [B2 180] 
+170 (Event B1) [B1 175] 
+170 (Event B4) 
+171 (Event B3) [B3 172] [B5 178] 
+172 (Event B3) [B4 176] 
+175 (Event B1) [B3 176] [B1 180] 
+176 (Event B4) 
+176 (Event B3) [B4 180] 
+178 (Event B5) 
+180 (Event B2) [B3 181] [B2 190] 
+180 (Event B1) [B1 185] 
+180 (Event B4) 
+181 (Event B3) [B3 182] [B5 188] 
+182 (Event B3) [B4 186] 
+185 (Event B1) [B3 186] [B1 190] 
+186 (Event B4) 
+186 (Event B3) [B4 190] 
+188 (Event B5) 
+190 (Event B2) [B3 191] [B2 200] 
+190 (Event B1) [B1 195] 
+190 (Event B4) 
+191 (Event B3) [B3 192] [B5 198] 
+192 (Event B3) [B4 196] 
+195 (Event B1) [B3 196] [B1 200] 
+196 (Event B4) 
+196 (Event B3) [B4 200] 
+198 (Event B5) 
+200 (Event B2) [B3 201] [B2 210] 
+
+=========================================================
+
+Performance metrics for the simulation:
+=========================================================
+
+Total simulated time = 200 sec
+Mean interarrival time for Px = 5 sec
+Mean interarrival time for Py = 10 sec
+Mean service time for R = 1 sec
+Total Px served by S1 = 38
+Mean service time for S1 = 4 sec
+Total Py served by S2 = 19
+Mean service time for S2 = 7 sec
+

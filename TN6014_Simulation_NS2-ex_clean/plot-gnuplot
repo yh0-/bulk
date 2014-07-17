@@ -1,0 +1,20 @@
+#!/usr/bin/gnuplot
+set term png large #000000
+set size 1.0,1.0
+
+set key top box
+set key reverse Right inside
+set grid
+set style data linespoints
+set title "WinFile"
+
+set yrang [1:100]
+#set ytics 10
+set xrang [0:150]
+#set xtics 1
+#set mxtics 5
+set output "WinFile.png"
+set ylabel "cwnd"
+set xlabel "time"
+plot "WinFile" title "cnwd"
+

@@ -1,0 +1,111 @@
+==14387== Memcheck, a memory error detector
+==14387== Copyright (C) 2002-2012, and GNU GPL'd, by Julian Seward et al.
+==14387== Using Valgrind-3.8.1 and LibVEX; rerun with -h for copyright info
+==14387== Command: ./SimComplex
+==14387== 
+--14387-- Valgrind options:
+--14387--    --suppressions=/usr/lib/valgrind/debian-libc6-dbg.supp
+--14387--    --leak-check=full
+--14387--    --show-reachable=yes
+--14387--    -v
+--14387-- Contents of /proc/version:
+--14387--   Linux version 3.12-kali1-amd64 (debian-kernel@lists.debian.org) (gcc version 4.7.2 (Debian 4.7.2-5) ) #1 SMP Debian 3.12.6-2kali1 (2014-01-06)
+--14387-- Arch and hwcaps: AMD64, amd64-sse3-cx16
+--14387-- Page sizes: currently 4096, max supported 4096
+--14387-- Valgrind library directory: /usr/lib/valgrind
+--14387-- Reading syms from /opt/SimComplexTN6014/SimComplex
+--14387-- Reading syms from /lib/x86_64-linux-gnu/ld-2.13.so
+--14387--   Considering /lib/x86_64-linux-gnu/ld-2.13.so ..
+--14387--   .. CRC mismatch (computed 926ea8c8 wanted b9056508)
+--14387--   Considering /usr/lib/debug/lib/x86_64-linux-gnu/ld-2.13.so ..
+--14387--   .. CRC is valid
+--14387-- Reading syms from /usr/lib/valgrind/memcheck-amd64-linux
+--14387--   Considering /usr/lib/valgrind/memcheck-amd64-linux ..
+--14387--   .. CRC mismatch (computed e021e69e wanted 356ab63e)
+--14387--   Considering /usr/lib/debug/usr/lib/valgrind/memcheck-amd64-linux ..
+--14387--   .. CRC is valid
+--14387--    object doesn't have a dynamic symbol table
+--14387-- Scheduler: using generic scheduler lock implementation.
+--14387-- Reading suppressions file: /usr/lib/valgrind/debian-libc6-dbg.supp
+--14387-- Reading suppressions file: /usr/lib/valgrind/default.supp
+==14387== embedded gdbserver: reading from /tmp/vgdb-pipe-from-vgdb-to-14387-by-root-on-???
+==14387== embedded gdbserver: writing to   /tmp/vgdb-pipe-to-vgdb-from-14387-by-root-on-???
+==14387== embedded gdbserver: shared mem   /tmp/vgdb-pipe-shared-mem-vgdb-14387-by-root-on-???
+==14387== 
+==14387== TO CONTROL THIS PROCESS USING vgdb (which you probably
+==14387== don't want to do, unless you know exactly what you're doing,
+==14387== or are doing some strange experiment):
+==14387==   /usr/lib/valgrind/../../bin/vgdb --pid=14387 ...command...
+==14387== 
+==14387== TO DEBUG THIS PROCESS USING GDB: start GDB like this
+==14387==   /path/to/gdb ./SimComplex
+==14387== and then give GDB the following command
+==14387==   target remote | /usr/lib/valgrind/../../bin/vgdb --pid=14387
+==14387== --pid is optional if only one valgrind process is running
+==14387== 
+--14387-- REDIR: 0x40169d0 (strlen) redirected to 0x3806c651 (vgPlain_amd64_linux_REDIR_FOR_strlen)
+--14387-- Reading syms from /usr/lib/valgrind/vgpreload_core-amd64-linux.so
+--14387--   Considering /usr/lib/valgrind/vgpreload_core-amd64-linux.so ..
+--14387--   .. CRC mismatch (computed 5325a40d wanted 75091aae)
+--14387--   Considering /usr/lib/debug/usr/lib/valgrind/vgpreload_core-amd64-linux.so ..
+--14387--   .. CRC is valid
+--14387-- Reading syms from /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so
+--14387--   Considering /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so ..
+--14387--   .. CRC mismatch (computed 47a31edb wanted 4f6aae18)
+--14387--   Considering /usr/lib/debug/usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so ..
+--14387--   .. CRC is valid
+--14387-- REDIR: 0x4016840 (index) redirected to 0x4c2a960 (index)
+--14387-- REDIR: 0x40168c0 (strcmp) redirected to 0x4c2b970 (strcmp)
+--14387-- Reading syms from /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.17
+--14387--   Considering /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.17 ..
+--14387--   .. CRC mismatch (computed 2e90e449 wanted 202ea9e2)
+--14387--    object doesn't have a symbol table
+--14387-- Reading syms from /lib/x86_64-linux-gnu/libm-2.13.so
+--14387--   Considering /lib/x86_64-linux-gnu/libm-2.13.so ..
+--14387--   .. CRC mismatch (computed 21ce1963 wanted 45464f1f)
+--14387--   Considering /usr/lib/debug/lib/x86_64-linux-gnu/libm-2.13.so ..
+--14387--   .. CRC is valid
+--14387-- Reading syms from /lib/x86_64-linux-gnu/libgcc_s.so.1
+--14387--   Considering /lib/x86_64-linux-gnu/libgcc_s.so.1 ..
+--14387--   .. CRC mismatch (computed f44ca19e wanted 240e89d2)
+--14387--    object doesn't have a symbol table
+--14387-- Reading syms from /lib/x86_64-linux-gnu/libc-2.13.so
+--14387--   Considering /lib/x86_64-linux-gnu/libc-2.13.so ..
+--14387--   .. CRC mismatch (computed 9ae25af6 wanted de4ce425)
+--14387--   Considering /usr/lib/debug/lib/x86_64-linux-gnu/libc-2.13.so ..
+--14387--   .. CRC is valid
+--14387-- REDIR: 0x5655990 (strcasecmp) redirected to 0x4a22750 (_vgnU_ifunc_wrapper)
+--14387-- REDIR: 0x5657c50 (strncasecmp) redirected to 0x4a22750 (_vgnU_ifunc_wrapper)
+--14387-- REDIR: 0x56539f0 (__GI_strrchr) redirected to 0x4c2a780 (__GI_strrchr)
+--14387-- REDIR: 0x5651f10 (__GI_strlen) redirected to 0x4c2ace0 (__GI_strlen)
+--14387-- REDIR: 0x5650490 (strcmp) redirected to 0x4a22750 (_vgnU_ifunc_wrapper)
+--14387-- REDIR: 0x56e4740 (__strcmp_sse42) redirected to 0x4c2b8d0 (strcmp)
+--14387-- REDIR: 0x5651ed0 (strlen) redirected to 0x4a22750 (_vgnU_ifunc_wrapper)
+--14387-- REDIR: 0x56ebed0 (__strlen_sse42) redirected to 0x4c2acc0 (strlen)
+--14387-- REDIR: 0x4e96060 (operator new(unsigned long)) redirected to 0x4c29c60 (operator new(unsigned long))
+--14387-- REDIR: 0x565a320 (memcpy) redirected to 0x4a22750 (_vgnU_ifunc_wrapper)
+--14387-- REDIR: 0x56fa190 (__memcpy_ssse3_back) redirected to 0x4c2bf30 (memcpy)
+--14387-- REDIR: 0x564cb90 (malloc) redirected to 0x4c2a230 (malloc)
+--14387-- REDIR: 0x4e96170 (operator new[](unsigned long)) redirected to 0x4c294f0 (operator new[](unsigned long))
+--14387-- REDIR: 0x4e94370 (operator delete(void*)) redirected to 0x4c28a50 (operator delete(void*))
+--14387-- REDIR: 0xffffffffff600400 (???) redirected to 0x3806c63d (vgPlain_amd64_linux_REDIR_FOR_vtime)
+--14387-- REDIR: 0x56545a0 (memmove) redirected to 0x4a22750 (_vgnU_ifunc_wrapper)
+--14387-- REDIR: 0x56ff730 (__memmove_ssse3_back) redirected to 0x4c2ce40 (memmove)
+--14387-- REDIR: 0x5654170 (bcmp) redirected to 0x4a22750 (_vgnU_ifunc_wrapper)
+--14387-- REDIR: 0x57068f0 (__memcmp_sse4_1) redirected to 0x4c2c9c0 (bcmp)
+--14387-- REDIR: 0x565b740 (strchrnul) redirected to 0x4c2d350 (strchrnul)
+--14387-- REDIR: 0x564cab0 (free) redirected to 0x4c28f20 (free)
+--14387-- REDIR: 0x56540f0 (memchr) redirected to 0x4c2ba10 (memchr)
+--14387-- REDIR: 0x4e943a0 (operator delete[](void*)) redirected to 0x4c284d0 (operator delete[](void*))
+==14387== 
+==14387== HEAP SUMMARY:
+==14387==     in use at exit: 0 bytes in 0 blocks
+==14387==   total heap usage: 206 allocs, 206 frees, 26,515 bytes allocated
+==14387== 
+==14387== All heap blocks were freed -- no leaks are possible
+==14387== 
+==14387== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 4 from 4)
+--14387-- 
+--14387-- used_suppression:      4 dl-hack3-cond-1
+==14387== 
+==14387== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 4 from 4)
